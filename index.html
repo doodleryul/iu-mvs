@@ -92,67 +92,67 @@
             switch (prediction[0].className) {
                 case "금요일에 만나요":
                     resultMessage = "금요일에 만나요"
-                    resultImg = document.getElementById("face-image").src="img/meetatfriday.png"
+                    resultImg = document.getElementById("face-image").src="./img/meetatfriday.png"
                     break;
                 case "나의 옛날이야기":
                     resultMessage = "나의 옛날이야기"
-                    resultImg = document.getElementById("face-image").src="img/myoldstory.png"
+                    resultImg = document.getElementById("face-image").src="./img/myoldstory.png"
                     break;
                 case "밤편지": 
                     resultMessage = "밤편지"
-                    resultImg = document.getElementById("face-image").src="img/nightletter.png"
+                    resultImg = document.getElementById("face-image").src="./img/nightletter.png"
                     break;
                 case "봄 사랑 벚꽃 말고":
                     resultMessage = "봄 사랑 벚꽃 말고"
-                    resultImg = document.getElementById("face-image").src="img/nospringlovecherryblossom.png"
+                    resultImg = document.getElementById("face-image").src="./img/nospringlovecherryblossom.png"
                     break;
                 case "분홍신":
                     resultMessage = "분홍신"
-                    resultImg = document.getElementById("face-image").src="img/pinkshoes.png"
+                    resultImg = document.getElementById("face-image").src="./img/pinkshoes.png"
                     break;
                 case "삐삐":
                     resultMessage = "삐삐"
-                    resultImg = document.getElementById("face-image").src="img/bbibbi.png"
+                    resultImg = document.getElementById("face-image").src="./img/bbibbi.png"
                     break;
                 case "스물셋":
                     resultMessage = "스물셋"
-                    resultImg = document.getElementById("face-image").src="img/twentythree.png"
+                    resultImg = document.getElementById("face-image").src="./img/twentythree.png"
                     break;
                 case "시간의 바깥":
                     resultMessage = "시간의 바깥"
-                    resultImg = document.getElementById("face-image").src="img/outoftime.png"
+                    resultImg = document.getElementById("face-image").src="./img/outoftime.png"
                     break;
                 case "이런 엔딩":
                     resultMessage = "이런 엔딩"
-                    resultImg = document.getElementById("face-image").src="img/thisending.png"
+                    resultImg = document.getElementById("face-image").src="./img/thisending.png"
                     break;
                 case "팔레트":
                     resultMessage = "팔레트"
-                    resultImg = document.getElementById("rface-image").src="img/palette.png"
+                    resultImg = document.getElementById("rface-image").src="./img/palette.png"
                     break;
                 case "하루끝":
                     resultMessage = "하루 끝"
-                    resultImg = document.getElementById("face-image").src="img/endofday.png"
+                    resultImg = document.getElementById("face-image").src="./img/endofday.png"
                     break;
                 case "Blueming":
                     resultMessage = "Blueming"
-                    resultImg = document.getElementById("face-image").src="img/blueming.png"
+                    resultImg = document.getElementById("face-image").src="./img/blueming.png"
                     break;
                 case "Celebrity":
                     resultMessage = "Celebrity"
-                    resultImg = document.getElementById("face-image").src="img/celebrity.png"
+                    resultImg = document.getElementById("face-image").src="./img/celebrity.png"
                     break;
                 case "Coin":
                     resultMessage = "Coin"
-                    resultImg = document.getElementById("face-image").src="img/coin.png"
+                    resultImg = document.getElementById("face-image").src="./img/coin.png"
                     break;
                 case "LILAC":
                     resultMessage = "LILAC"
-                    resultImg = document.getElementById("face-image").src="img/lilac.png"
+                    resultImg = document.getElementById("face-image").src="./img/lilac.png"
                     break;
                 default:
                     resultMessage = "진짜 아이유?"
-                    resultImg = document.getElementById("face-image").src="img/bestphoto.png"
+                    resultImg = document.getElementById("face-image").src="./img/bestphoto.png"
             }
             $('.result-message').html(resultMessage);
             for (let i = 0; i < maxPredictions; i++) {
@@ -177,8 +177,7 @@
             <p class="result-message"></p>
             <div id="label-container"></div>
             <div class="image-title-wrap">
-                <button type="button" onclick="removeUpload()" class="remove-image">Remove <span
-                        class="image-title">Uploaded Image</span></button>
+                <button type="button" onclick="removeUpload()" class="remove-image">다른 사진으로 다시 시도하기</button>
             </div>
             <div class="addthis_inline_share_toolbox_6v86"></div>
         </div>
