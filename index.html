@@ -43,7 +43,7 @@
         </div>
     </nav>
     <section class="section">
-        <h1 class="title">나의 아이유 뮤비는?</h1>
+        <!--<h1 class="title">나의 아이유 뮤비는?</h1>-->
         <h1 class="subtitle">나는 어떤 아이유 뮤비와 어울릴까?</h1>
     </section>
     <section class="youtube pb-3" id="yotube-mid-link">
@@ -226,7 +226,6 @@
                 };
                 reader.readAsDataURL(input.files[0]);
                 init().then(()=>{
-                    console.log("hello");
                     predict();
                     $('#loading').hide();
                 });
