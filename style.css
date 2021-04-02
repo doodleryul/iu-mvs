@@ -5,7 +5,7 @@ body {
   
   .file-upload {
     margin: 0 auto;
-    padding: 13%;
+    padding: 5%;
     background-color: #f6f7fa;
     border-radius: 10px;
     border: solid 1.5px #f6f7fa;
@@ -69,8 +69,8 @@ body {
   }
   
   .file-upload-image {
-    max-height: 200px;
-    max-width: 200px;
+    max-height: 100%;
+    max-width: 100%;
     margin: auto;
     padding: 20px;
   }
