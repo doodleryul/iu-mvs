@@ -14,7 +14,7 @@
     <meta name="subject" content="얼굴로 보는 나와 어울리는 아이유 뮤비는? 나와 비슷한 아이유 이미지를 찾아보세요!!">
     <meta name="keywords" content="나의 아이유 뮤비, 나와 어울리는 아이유 뮤비 찾기, 얼굴로 보는 아이유 뮤비는?, 금요일에 만나요, 나의 옛날이야기, 너랑 나, 마쉬멜로우, 밤편지, 봄 사랑 벚꽃 말고, 분홍신, 삐삐, 스물셋, 시간의 바깥, 이런 엔딩, 있잖아, 좋은 날, 팔레트, 하루 끝, Blueming, Celebrity, Coin, LILAC"> 
     <meta name="author" content="율링율링">
-    <meta name="refernece" content="조코딩">
+    <meta name="reference" content="조코딩">
     <link rel="stylesheet" href=style.css>
     <script src="https://kit.fontawesome.com/872040ffff.js" crossorigin="anonymous"></script>
     <!-- Go to www.addthis.com/dashboard to customize your tools -->
@@ -83,71 +83,76 @@
         // run the webcam image through the image model
         async function predict() {
             // predict can take in an image, video or canvas html element
-            var image = document.getElementById("face-image")
+            var image = document.getElementById("face-image");
             const prediction = await model.predict(image, false);
             prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
             console.log(prediction);
             var resultMessage;
+            var resultImg;
             switch (prediction[0].className) {
                 case "금요일에 만나요":
                     resultMessage = "금요일에 만나요"
+                    resultImg = document.getElementById("face-image").src="img/meetatfriday.png"
                     break;
                 case "나의 옛날이야기":
                     resultMessage = "나의 옛날이야기"
-                    break;
-                case "너랑나":
-                    resultMessage = "너랑나" 
-                    break;
-                case "마쉬멜로우":
-                    resultMessage = "마쉬멜로우"
+                    resultImg = document.getElementById("face-image").src="img/myoldstory.png"
                     break;
                 case "밤편지": 
                     resultMessage = "밤편지"
+                    resultImg = document.getElementById("face-image").src="img/nightletter.png"
                     break;
                 case "봄 사랑 벚꽃 말고":
                     resultMessage = "봄 사랑 벚꽃 말고"
+                    resultImg = document.getElementById("face-image").src="img/nospringlovecherryblossom.png"
                     break;
                 case "분홍신":
                     resultMessage = "분홍신"
+                    resultImg = document.getElementById("face-image").src="img/pinkshoes.png"
                     break;
                 case "삐삐":
                     resultMessage = "삐삐"
+                    resultImg = document.getElementById("face-image").src="img/bbibbi.png"
                     break;
                 case "스물셋":
                     resultMessage = "스물셋"
+                    resultImg = document.getElementById("face-image").src="img/twentythree.png"
                     break;
                 case "시간의 바깥":
                     resultMessage = "시간의 바깥"
+                    resultImg = document.getElementById("face-image").src="img/outoftime.png"
                     break;
                 case "이런 엔딩":
                     resultMessage = "이런 엔딩"
-                    break;
-                case "있잖아":
-                    resultMessage = "있잖아"
-                    break;
-                case "좋은날":
-                    resultMessage = "좋은 날"
+                    resultImg = document.getElementById("face-image").src="img/thisending.png"
                     break;
                 case "팔레트":
                     resultMessage = "팔레트"
+                    resultImg = document.getElementById("rface-image").src="img/palette.png"
                     break;
                 case "하루끝":
                     resultMessage = "하루 끝"
+                    resultImg = document.getElementById("face-image").src="img/endofday.png"
                     break;
                 case "Blueming":
                     resultMessage = "Blueming"
+                    resultImg = document.getElementById("face-image").src="img/blueming.png"
                     break;
                 case "Celebrity":
                     resultMessage = "Celebrity"
+                    resultImg = document.getElementById("face-image").src="img/celebrity.png"
                     break;
                 case "Coin":
                     resultMessage = "Coin"
+                    resultImg = document.getElementById("face-image").src="img/coin.png"
                     break;
                 case "LILAC":
                     resultMessage = "LILAC"
+                    resultImg = document.getElementById("face-image").src="img/lilac.png"
                     break;
                 default:
-                    resultMessage = "알수없음"
+                    resultMessage = "진짜 아이유?"
+                    resultImg = document.getElementById("face-image").src="img/bestphoto.png"
             }
             $('.result-message').html(resultMessage);
             for (let i = 0; i < maxPredictions; i++) {
@@ -199,18 +204,9 @@
     </script>
     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
-    -->
 
     <script>
         function readURL(input) {
