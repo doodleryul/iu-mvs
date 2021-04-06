@@ -172,6 +172,7 @@ body {
   .result-lylics {
     font-size: 1.5rem;
     color: #8977ad;
+    margin-bottom: 0;
 }
 
   .result-message {
