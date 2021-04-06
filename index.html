@@ -90,12 +90,8 @@
             // predict can take in an image, video or canvas html element
             var image = document.getElementById("face-image");
             const prediction = await model.predict(image, false);
-            prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
-            console.log(prediction);
-            var resultMessage;
-            var resultIUlylics;
-            var resultImg;
-            var resultmv;
+            //prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
+            var resultMessage, resultIUlylics, resultImg, resultmv;
             switch (prediction[0].className) {
                 case "금요일에 만나요":
                     resultlylics = "우~ 이번 주 금요일 우~ 금요일에 시간 어때요?"
@@ -226,9 +222,11 @@
             <div class="image-title-wrap">
                 <button type="button" onclick="removeUpload()" class="remove-image">다른 사진으로 다시 시도하기</button>
             </div>
+
+            <!-- youtube video -->
             <div class="youtube-mv">
-                <p class="youtube-message">아이유 뮤비 보기</p>
-                <iframe width="560" height="315" id="youtube-mv" src="#" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p class="youtube-message">아이유 뮤비 보기🍿</p>
+                <iframe id="youtube-mv" src="#" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="addthis_inline_share_toolbox_6v86"></div>
         </div>
