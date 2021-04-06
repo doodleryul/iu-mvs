@@ -12,6 +12,7 @@ body {
     border: solid 1.5px #f6f7fa;
     background-color: #f7f7fa;
     width: 914px;
+    margin-bottom: 3rem;
   }
   
   .file-upload-content {
