@@ -182,12 +182,12 @@ body {
     font-weight: bold;
 }
 
-.player {
+.youtube-player {
   background: black;
   margin-bottom: var(--padding-size);
 }
 
-.player .video {
+.youtube-player .video {
   float: none;
   clear: both;
   width: 100%;
@@ -197,7 +197,7 @@ body {
   height: 0;
 }
 
-.player iframe {
+.youtube-player iframe {
   top: 0;
   left: 0;
   right: 0;
