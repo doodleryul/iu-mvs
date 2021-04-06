@@ -169,6 +169,11 @@ body {
       color: #35465d;
   }
 
+  .result-lylics {
+    font-size: 1.5rem;
+    color: #8977ad;
+}
+
   .result-message {
     font-size: 1.5rem;
     font-weight: bold;
