@@ -1,5 +1,6 @@
 body {
     font-family: 'Black Han Sans', sans-serif;
+    font-family: 'Gaegu', cursive;
     background-color: #ffffff;
   }
   
@@ -57,7 +58,6 @@ body {
   .drag-text {
     width: 50%;
     text-align: center;
-    font-family: 'Black Han Sans', sans-serif;
     font-size: 1.5rem;
     line-height: 1.53;
     text-align: center;
@@ -149,7 +149,6 @@ body {
   }
 
   .youtube-link {
-      font-family: 'Black Han Sans', sans-serif;
       font-size: 1.5rem;
       line-height: 1.71;
       text-align: center;
@@ -158,7 +157,6 @@ body {
   }
 
   .youtube-link:hover{
-    font-family: 'Black Han Sans', sans-serif;
     font-size: 1.5rem;
     line-height: 1.71;
     text-align: center;
