@@ -181,11 +181,11 @@ body {
     font-size: 1.5rem;
     font-weight: bold;
 }
+  .youtube-player {
+    margin-top: 3rem;
+}
 
-.youtube-player iframe {
-  top: 0;
-  left: 0;
-  right: 0;
+  .youtube-player iframe {
   width: 100%;
   height: 100%;
   margin-left: auto;
