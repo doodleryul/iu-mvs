@@ -95,86 +95,103 @@
             var resultMessage;
             var resultIUlylics;
             var resultImg;
+            var resultmv;
             switch (prediction[0].className) {
                 case "금요일에 만나요":
                     resultlylics = "우~ 이번 주 금요일 우~ 금요일에 시간 어때요?"
                     resultMessage = "금요일에 만나요의 아이유처럼 사랑에 빠진 수줍은 당신이에요."
                     resultImg = document.getElementById("face-image").src="./img/meetatfriday.png"
+                    resultmv = document.getElementById("youtube-mv").src="https://www.youtube.com/embed/EiVmQZwJhsA?controls=0"
                     break;
                 case "나의 옛날이야기":
                     resultlylics = "쓸쓸하던 그 골목을 당신은 기억하십니까 지금도 난 기억합니다."
                     resultMessage = "나의 옛날이야기의 아이유처럼 어딘가 쓸쓸하고 외로운 당신이에요."
                     resultImg = document.getElementById("face-image").src="./img/myoldstory.png"
+                    resultmv = document.getElementById("youtube-mv").src="https://www.youtube.com/embed/EiVmQZwJhsA?controls=0"
                     break;
                 case "밤편지": 
                     resultlylics = "이 밤 그날의 반딧불을 당신의 창 가까이 보낼게요."
                     resultMessage = "밤편지의 아이유처럼 이제 사랑을 시작하는 분위기있고 감성적인 당신이에요."
                     resultImg = document.getElementById("face-image").src="./img/nightletter.jpeg"
+                    resultmv = document.getElementById("youtube-mv").src="https://www.youtube.com/embed/EiVmQZwJhsA?controls=0"
                     break;
                 case "봄 사랑 벚꽃 말고":
                     resultlylics = "나만 뺴고 다 사랑에 빠져 봄노래를 부르고"
                     resultMessage = "봄 사랑 벚꽃 말고의 아이유처럼 톡톡튀고 밝은 당신이에요."
                     resultImg = document.getElementById("face-image").src="./img/nospringlovecherryblossom.jpeg"
+                    resultmv = document.getElementById("youtube-mv").src="https://www.youtube.com/embed/EiVmQZwJhsA?controls=0"
                     break;
                 case "분홍신":
                     resultlylics = "길을 잃었다, 어딜 가야 할까"
                     resultMessage = "분홍신의 길 잃은 아이유처럼 퇴폐미 가득한 당신이에요."
                     resultImg = document.getElementById("face-image").src="./img/pinkshoes.png"
+                    resultmv = document.getElementById("youtube-mv").src="https://www.youtube.com/embed/EiVmQZwJhsA?controls=0"
                     break;
                 case "삐삐":
                     resultlylics = "Yellow C A R D 이 선 넘으면 침범이야 beep."
                     resultMessage = "삐삐의 아이유처럼 귀엽고 대담한 당신이에요."
                     resultImg = document.getElementById("face-image").src="./img/bbibbi.png"
+                    resultmv = document.getElementById("youtube-mv").src="https://www.youtube.com/embed/EiVmQZwJhsA?controls=0"
                     break;
                 case "스물셋":
                     resultlylics = "여우인 척, 하는 곰인 척"
                     resultMessage = "스물셋의 아이유처럼 섹시하고 매혹적인 당신이에요."
                     resultImg = document.getElementById("face-image").src="./img/twentythree.png"
+                    resultmv = document.getElementById("youtube-mv").src="https://www.youtube.com/embed/EiVmQZwJhsA?controls=0"
                     break;
                 case "시간의 바깥":
                     resultlylics = "기다려 기어이 우리가 만나면"
                     resultMessage = "시간의 바깥의 아이유처럼 몽환적인 당신이에요."
                     resultImg = document.getElementById("face-image").src="./img/outoftime.jpeg"
+                    resultmv = document.getElementById("youtube-mv").src="https://www.youtube.com/embed/EiVmQZwJhsA?controls=0"
                     break;
                 case "이런 엔딩":
                     resultlylics = "안녕 오랜만이야 물음표 없이 참 너다운 목소리"
                     resultMessage = "이런 엔딩의 아이유처럼 이별의 아픔을 아는 여리고 성숙한 당신이에요."
                     resultImg = document.getElementById("face-image").src="./img/thisending.jpeg"
+                    resultmv = document.getElementById("youtube-mv").src="https://www.youtube.com/embed/EiVmQZwJhsA?controls=0"
                     break;
                 case "팔레트":
                     resultlylics = "I like it, I'm twenty five 날 좋아하는 거 알아"
                     resultMessage = "팔레트의 아이유처럼 청초하고 매력적인 당신이에요."
                     resultImg = document.getElementById("face-image").src="./img/palette.png"
+                    resultmv = document.getElementById("youtube-mv").src="https://www.youtube.com/embed/EiVmQZwJhsA?controls=0"
                     break;
                 case "하루끝":
                     resultlylics = "네가 좋아서 그래 나 차가운 척 표정 짓고 있지만"
                     resultMessage = "하루 끝의 아이유처럼 청순하고 상큼한 당신이에요."
                     resultImg = document.getElementById("face-image").src="./img/endofday.jpeg"
+                    resultmv = document.getElementById("youtube-mv").src="https://www.youtube.com/embed/EiVmQZwJhsA?controls=0"
                     break;
                 case "Blueming":
                     resultlylics = "향기에 취할 것 같아 우 오직 둘만의 비밀의 정원"
                     resultMessage = "Blueming의 아이유처럼 당차고 장난기있는 당신이에요."
                     resultImg = document.getElementById("face-image").src="./img/blueming.png"
+                    resultmv = document.getElementById("youtube-mv").src="https://www.youtube.com/embed/EiVmQZwJhsA?controls=0"
                     break;
                 case "Celebrity":
                     resultlylics = "왼손으로 그린 별 하나 보이니 그 유일함이 얼마나 아름다운지 말야"
                     resultMessage = "Celebrity의 아이유처럼 어딘가 마이너한 그러면서도 화려하고 밝은 당신이에요."
                     resultImg = document.getElementById("face-image").src="./img/celebrity.jpeg"
+                    resultmv = document.getElementById("youtube-mv").src="https://www.youtube.com/embed/EiVmQZwJhsA?controls=0"
                     break;
                 case "Coin":
                     resultlylics = "I can't die I'm all in"
                     resultMessage = "Coin의 아이유처럼 화끈하고 과감한 당신이에요."
                     resultImg = document.getElementById("face-image").src="./img/coin.png"
+                    resultmv = document.getElementById("youtube-mv").src="https://www.youtube.com/embed/EiVmQZwJhsA?controls=0"
                     break;
                 case "LILAC":
                     resultlylics = "이런 결말이 어울려 안녕 꽃잎 같은 안녕"
                     resultMessage = "LILAC의 아이유처럼 활기차고 온화한 당신이에요."
                     resultImg = document.getElementById("face-image").src="./img/lilac.jpeg"
+                    resultmv = document.getElementById("youtube-mv").src="https://www.youtube.com/embed/EiVmQZwJhsA?controls=0"
                     break;
                 default:
                     resultlylics = "혹시"
                     resultMessage = "진짜 아이유?"
                     resultImg = document.getElementById("face-image").src="./img/bestphoto.jpeg"
+                    resultmv = document.getElementById("youtube-mv").src="https://www.youtube.com/embed/EiVmQZwJhsA?controls=0"
             }
             $('.result-lylics').html(resultlylics);
             $('.result-message').html(resultMessage);
@@ -208,6 +225,10 @@
             <div id="label-container"></div>
             <div class="image-title-wrap">
                 <button type="button" onclick="removeUpload()" class="remove-image">다른 사진으로 다시 시도하기</button>
+            </div>
+            <div class="youtube-mv">
+                <p class="youtube-message">아이유 뮤비 보기</p>
+                <iframe width="560" height="315" id="youtube-mv" src="#" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="addthis_inline_share_toolbox_6v86"></div>
         </div>
