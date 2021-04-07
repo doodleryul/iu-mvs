@@ -89,8 +89,6 @@
         async function predict() {
             // predict can take in an image, video or canvas html element
             var image = document.getElementById("face-image");
-            document.getElementById("face-image").style.maxWidth="60%";
-            document.getElementById("face-image").style.maxHeight="60%";
             const prediction = await model.predict(image, false);
             prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
             var resultMessage, resultIUlylics, resultImg, resultmv;
